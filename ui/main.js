@@ -21,7 +21,7 @@ button.onclick=function(){
   
   // Make the request.
   
-  request.open("GET","http://nshannughf.imad.hasura.app.io",true);
+  request.open('GET','http://nshannughf.imad.hasura-app.io',true);
   request.send(null);
 
 };
