@@ -19,6 +19,9 @@ button.onclick=function(){
     }
   };
   
-  // Render the variable in the correct span.
+  // Make the request.
+  
+  request.open("GET","http://nshannughf.imad.hasura.app.io",true);
+  request.send(null);
 
 };
