@@ -10,7 +10,9 @@ var articles={
     title: 'Article-one | Shahnaj',
     heading: 'Article One',
     date: `sep 5, 2016`,
+    //comments: `<textarea name="body" id="comments"></textarea> <button id="post">post</button>`,
     content:`
+                
                 <p>
                     This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
                 </p>
@@ -19,7 +21,15 @@ var articles={
                 </p>
                 <p>
                     This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                </p>`
+                </p>
+                <hr/>
+                <div class="footer">
+                    <input type ="text" id="comments" placeholder="comments"></input>
+                    <input type="submit" value="post" id="post-btn"></input>
+                    
+                    <ul id="commentslist">
+                    </ul>
+                </div>`
 },
 'article-two' : {
     title: 'Article-two | Shahnaj',
