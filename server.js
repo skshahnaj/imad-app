@@ -26,7 +26,7 @@ var articles={
                 <div class="footer">
                     <input type ="text" id="comments" placeholder="comment here"></input>
                     <input type="submit" value="post" id="post-btn"></input>
-                    
+                
                     <ul id="commentslist">
                     </ul>
                 </div>`
