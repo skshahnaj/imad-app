@@ -120,8 +120,11 @@ app.get('/:articleName', function(req,res){
 });
 
 var comments=[];
-app.get('/post-comment', function(req,res){ // URL: /post-comment?comment=XXXXXX
+app.get('/:articleName/post-comment', function(req,res){ // URL: /post-comment?comment=XXXXXX
     // get the name from the request
+    var articleName=req.params.articleName;
+    res.send(createTemplate(articles[articleName]));
+    
     var comment = req.query.comment;
     comments.push(comment);
     
