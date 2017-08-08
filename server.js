@@ -24,7 +24,7 @@ var articles={
                 </p>
                 <hr/>
                 <div class="footer">
-                    <input type ="text" id="comments" placeholder="comments"></input>
+                    <input type ="text" id="comments" placeholder="comment here"></input>
                     <input type="submit" value="post" id="post-btn"></input>
                     
                     <ul id="commentslist">
@@ -117,6 +117,16 @@ app.get('/:articleName', function(req,res){
     //articles[articleName]=={} content object for article-one
     var articleName=req.params.articleName;
     res.send(createTemplate(articles[articleName]));
+});
+
+var comments=[];
+app.get('/post-comment', function(req,res){ // URL: /post-comment?comment=XXXXXX
+    // get the name from the request
+    var comment = req.query.comment;
+    comments.push(comment);
+    
+    // JSON Javascript Object Notation
+    res.send(JSON.stringify(comments));
 });
 
 
