@@ -15,51 +15,7 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-'article-one' : {
-    title: 'Article-one | Shahnaj',
-    heading: 'Article One',
-    date: `sep 5, 2016`,
-    //comments: `<textarea name="body" id="comments"></textarea> <button id="post">post</button>`,
-    content:`
-                
-                <p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                </p>
-                <p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                </p>
-                <p>
-                    This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article. This is the content for my first article.
-                </p>
-                <hr/>
-                <div class="footer">
-                    <input type ="text" id="comments" placeholder="comment here"></input>
-                    <input type="submit" value="post" id="post-btn"></input>
-                
-                    <ul id="commentslist">
-                    </ul>
-                </div>`
-},
-'article-two' : {
-    title: 'Article-two | Shahnaj',
-    heading: 'Article Two',
-    date: `sep 10, 2016`,
-    content:`
-                <p>
-                    This is the content for my second article. 
-                </p>`
-},
-'article-three' : {
-    title: 'Article-three | Shahnaj',
-    heading: 'Article Three',
-    date: `sep 11, 2016`,
-    content:`
-                <p>
-                    This is the content for my thrid article. 
-                </p>`
-}
-};
+
 
 function createTemplate(data)
 {
